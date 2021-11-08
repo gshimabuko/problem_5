@@ -1,0 +1,1 @@
+SELECT CASE WHEN Grade < 8 THEN null ELSE Name END AS Name, Students.Value AS Value, Notes.Grade AS Grade FROM Students, Notes WHERE (Students.Value >= Notes.Min_Value AND Students.Value <= Notes.Max_Value) ORDER BY GRADE DESC, VALUE ASC;
